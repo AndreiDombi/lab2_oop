@@ -36,10 +36,7 @@ void complex::set_imaginary(double i)
 
 complex complex::add(complex a, complex b)
 {
-    complex x;
-    x.set_real(a.get_real()+b.get_real());
-    x.set_imaginary(a.get_imaginary()+b.get_imaginary());
-    return x;
+    return complex(a.get_real() + b.get_real(), a.get_imaginary() + b.get_Imaginary());
 }
 
 void complex::print(complex x)
